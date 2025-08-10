@@ -13,9 +13,9 @@ export default function Header({ page, setPage }) {
           {/* Лого картинкой */}
           <div className="w-13 h-13">
             <img 
-              src="/images/logo.png" 
+              src={`${import.meta.env.BASE_URL}images/logo.png`} 
               alt="Логотип БуТеръ" 
-              className="object-contain"
+              className="w-full h-full object-contain"
             />
           </div>
 

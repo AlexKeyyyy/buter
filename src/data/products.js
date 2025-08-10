@@ -7,7 +7,7 @@ export const PRODUCTS = [
     weight: "85 г",
     calories: 320,
     description: "Слоёный круассан с мягким сыром и хрустящей корочкой.",
-    image: "/images/croissant-cheese.jpg",
+    image: `${import.meta.env.BASE_URL}images/croissant-cheese.jpg`,
     available: true,
   },
   {
@@ -18,7 +18,7 @@ export const PRODUCTS = [
     weight: "350 мл",
     calories: 220,
     description: "Классический домашний борщ с говядиной и сметаной.",
-    image: "/images/borscht.jpg",
+    image: `${import.meta.env.BASE_URL}images/borscht.jpg`,
     available: true,
   },
   {
@@ -29,7 +29,7 @@ export const PRODUCTS = [
     weight: "180 г",
     calories: 450,
     description: "Чиабатта с маринованной курицей и овощами.",
-    image: "/images/sandwich-chicken.jpg",
+    image: `${import.meta.env.BASE_URL}images/sandwich-chicken.jpg`,
     available: true,
   },
   {
@@ -40,7 +40,7 @@ export const PRODUCTS = [
     weight: "60 г",
     calories: 210,
     description: "Нежный пирожок с тушёной капустой и лучком.",
-    image: "/images/pirozhok.jpg",
+    image: `${import.meta.env.BASE_URL}images/pirozhok.jpg`,
     available: true,
   },
   {
@@ -51,7 +51,7 @@ export const PRODUCTS = [
     weight: "400 г",
     calories: 650,
     description: "Сочное филе, запечённое с травами и гарниром.",
-    image: "/images/hot-chicken.jpg",
+    image: `${import.meta.env.BASE_URL}images/hot-chicken.jpg`,
     available: false,
   },
 ];

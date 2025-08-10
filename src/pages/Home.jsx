@@ -23,7 +23,7 @@ export default function Home({ onShowMenu }) {
         {/* <div className="w-full h-72 bg-[#071217] rounded-lg flex items-center justify-center">Фото продукции / слайдер</div> */}
         <div className="w-15 h-15">
             <img 
-              src="/images/logo.jpg" 
+              src={`${import.meta.env.BASE_URL}images/logo.jpg`} 
               alt="Логотип БуТеръ" 
               className="w-full h-full object-contain"
             />
