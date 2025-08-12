@@ -22,7 +22,7 @@ export default function ProductModal({ product, onClose }) {
             </div>
 
             <div className="mt-6 text-sm text-gray-400">
-              <strong>Примечание:</strong> можно добавить ингредиенты, аллергенную информацию и номер позиции для заказа оптом.
+              <strong>Примечание:</strong> можно добавить ингридиенты, аллергенную информацию и номер позиции для заказа оптом.
             </div>
           </div>
         </div>
