@@ -25,7 +25,7 @@ function Home({ onShowMenu }) {
               Посмотреть меню
             </button>
             <a
-              href="#contacts"
+              href="mailto:info@buter.ru"
               className="px-5 py-3 rounded-md border border-gray-700 text-gray-300 hover:bg-gray-800 transition"
             >
               Связаться
@@ -53,9 +53,9 @@ function Home({ onShowMenu }) {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="bg-gray-900 rounded-2xl p-6 shadow flex items-center justify-center"
+          className="rounded-2xl shadow flex items-center justify-center"
         >
-          <div className="w-full h-72 rounded-lg overflow-hidden shadow-lg">
+          <div className="w-full h-85 rounded-lg overflow-hidden shadow-lg">
             <img
               src={`${import.meta.env.BASE_URL}images/image.png`}
               alt="Логотип БуТерЪ"
@@ -65,10 +65,39 @@ function Home({ onShowMenu }) {
         </motion.div>
       </div>
 
-      {/* Новый блок — направления работы */}
+      {/* Блок категорий */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto"
+      >
+        {[
+          { title: "Выпечка", img: "bakery.jpg" },
+          { title: "Супы", img: "soups.jpg" },
+          { title: "Горячее", img: "hot.jpg" },
+          { title: "Закуски", img: "snacks.jpg" },
+        ].map((item, i) => (
+          <div key={i} className="relative group overflow-hidden rounded-xl shadow-lg">
+            <img
+              src={`${import.meta.env.BASE_URL}images/${item.img}`}
+              alt={item.title}
+              className="w-full h-48 md:h-64 object-cover transform group-hover:scale-105 transition duration-500"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+              <span className="text-white text-xl md:text-2xl font-bold uppercase tracking-wide">
+                {item.title}
+              </span>
+            </div>
+          </div>
+        ))}
+      </motion.div>
+
+      {/* Направления работы */}
       <BusinessSolutions />
 
-      {/* Новый блок — индивидуальные заказы */}
+      {/* Индивидуальные заказы */}
       <CustomOrder />
     </section>
   );
