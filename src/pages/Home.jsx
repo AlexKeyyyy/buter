@@ -12,7 +12,7 @@ function Home({ onShowMenu }) {
           <h2 className="text-4xl font-extrabold mb-4 text-white">
             Мы создаём настроение — вкусно и полезно
           </h2>
-          <p className="text-gray-400 mb-6">
+          <p className="text-[var(--muted)] mb-6">
             Мы — современное предприятие, где традиции качественного питания
             сочетаются с инновациями. Каждое блюдо готовится с любовью и заботой
             о вашем здоровье.
@@ -105,7 +105,8 @@ function Home({ onShowMenu }) {
 
 function Feature({ title, children }) {
   return (
-    <div className="p-4 bg-gray-900 rounded-lg border border-gray-800">
+    <div className="p-4 bg-[#071217] rounded-lg border border-[var(--bg)]">
+
       <h4 className="font-semibold text-white">{title}</h4>
       <p className="text-sm text-gray-400 mt-1">{children}</p>
     </div>
@@ -150,9 +151,10 @@ function BusinessSolutions() {
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {solutions.map((s, i) => (
           <div
-            key={i}
-            className="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-brand-orange transition"
-          >
+  key={i}
+  className="bg-[#071217] border border-gray-800 rounded-xl p-6 hover:border-brand-orange transition"
+>
+
             <div className="mb-4">{s.icon}</div>
             <h4 className="text-lg font-semibold text-white mb-2">{s.title}</h4>
             <p className="text-gray-400 text-sm">{s.desc}</p>
@@ -165,7 +167,8 @@ function BusinessSolutions() {
 
 function CustomOrder() {
   return (
-    <section className="bg-gray-900 rounded-2xl p-8 border border-gray-800 max-w-6xl mx-auto">
+    <section className="bg-[#071217] rounded-2xl p-8 border border-gray-800 max-w-6xl mx-auto">
+
       <h3 className="text-2xl font-bold text-white mb-4 uppercase">
         Мы можем разработать блюда под индивидуальный запрос
       </h3>
@@ -178,17 +181,20 @@ function CustomOrder() {
         <input
           type="text"
           placeholder="Имя"
-          className="p-3 rounded-md bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:border-brand-orange focus:outline-none"
+          className="p-3 rounded-md bg-[#071217] border border-[var(--bg)] text-white placeholder-[var(--muted)]"
+
         />
         <input
           type="tel"
           placeholder="Телефон"
-          className="p-3 rounded-md bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:border-brand-orange focus:outline-none"
+          className="p-3 rounded-md bg-[#071217] border border-[var(--bg)] text-white placeholder-[var(--muted)]"
+
         />
         <input
           type="email"
           placeholder="E-mail"
-          className="p-3 rounded-md bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:border-brand-orange focus:outline-none"
+          className="p-3 rounded-md bg-[#071217] border border-[var(--bg)] text-white placeholder-[var(--muted)]"
+
         />
         <div className="md:col-span-3">
           <a

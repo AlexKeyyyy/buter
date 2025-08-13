@@ -13,7 +13,7 @@ export default function Header({ page, setPage }) {
   ];
 
   return (
-    <header className="bg-[#071014] border-b border-gray-800">
+    <header className="bg-[var(--bg)] border-b border-[var(--panel)]">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         
         {/* ЛОГО СЛЕВА */}
